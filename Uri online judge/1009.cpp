@@ -1,4 +1,4 @@
-//1009 - Salary with Bonus
+//1009 - Salary with Bonus solution
 #include <stdio.h>
 int main()
 {
