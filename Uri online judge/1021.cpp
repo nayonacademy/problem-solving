@@ -2,9 +2,9 @@
 
 int main()
 {
-    float banknotes_a;
+    double banknotes_a;
     int restamount = 0;
-    scanf("%f", &banknotes_a);
+    scanf("%lf", &banknotes_a);
     int banknotes = banknotes_a * 100;
     printf("NOTAS:\n");
     if (banknotes % 10000 != 0)
