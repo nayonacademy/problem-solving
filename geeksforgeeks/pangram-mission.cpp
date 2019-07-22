@@ -27,3 +27,10 @@ string missingChars(string str)
     return res;
 }
 
+// Driver program
+int main()
+{
+    string str = "The quick brown fox jumps over the dog";
+    cout <<  missingChars(str);
+    return 0;
+}
