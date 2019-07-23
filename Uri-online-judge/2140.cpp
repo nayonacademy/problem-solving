@@ -28,3 +28,15 @@
 	
 
 // 7
+# include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin >> a >> b;
+    c = b - a;
+    if (a==0 && b == 0){
+        
+    }
+    return 0;
+}
