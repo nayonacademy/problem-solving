@@ -5,16 +5,20 @@ using namespace std;
 
 int main()
 {
-    int x, n, a,b=0;
-    cin >> x >> n;
-    while(n<=0){
-        cin>>n;
-    }
-    // for (a=1;a<=n;a++)
-    // {
-    //     b+=x;
-    //     x++;
-    // }
-    cout << x << n <<endl;
+    int a,b,aux;
+    
+        while (cin >>a)
+        {
+            int total = 0;
+            cin >> b;
+            while(b <= 0){
+                cin >> b;
+            }
+            for(int i=0;i<b; i++){
+                total += (a+i);
+            }
+            cout << total << endl;
+        }
+        
     return 0;
 }
