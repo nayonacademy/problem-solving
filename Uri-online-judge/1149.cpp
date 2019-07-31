@@ -10,11 +10,7 @@ int main()
     while(n<=0){
         cin>>n;
     }
-    // for (a=1;a<=n;a++)
-    // {
-    //     b+=x;
-    //     x++;
-    // }
+
     cout << x << n <<endl;
     return 0;
 }
