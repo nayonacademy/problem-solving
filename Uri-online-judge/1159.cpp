@@ -3,16 +3,19 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
-    if (n!=0){
-        int sum = 0;
-        for (int i=n;i<=n+9; i++){
-            if(i%2==0){
-                sum += i;
+    int a;
+    while(cin>>a){
+        if (a==0){
+            break;
+        }else{
+            int sum=0;
+            for(int i=a;i<a+10;i++){
+                if(i%2==0){
+                    sum +=i;
+                }
             }
+            cout << sum << endl;
         }
-        cout << sum << endl; 
     }
     
     return 0;

@@ -9,12 +9,17 @@ int main()
         int a, b, result=0;
         cin >> a >> b;
 
-        for (int j=a;j<a+b+b;j++){
-            if(j%2==1){
-                result +=j;
-            }else{
+        if(a%2 !=0){
+            result +=a;
+        }else{
+            a +=1;
+            result +=a;
+        }
 
-            }
+
+        for (int j=0;j<b-1;j++){
+            a +=2;
+            result +=a;
         }
         cout << result << endl;
     }
