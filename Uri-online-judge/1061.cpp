@@ -1,18 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    // string one, two;
-    // string one_t, two_t;
-    // getline(cin, one);
-    // getline(cin, one_t);
-    // getline(cin, two);
-    // getline(cin, two_t);
-    // cout << one << two << one_t << two_t << endl;
-    int day_start = 5;
-    int day_end = 9;
-    int start_time = (8*60 + 12)*60 + 23;
-    int endtime_time = (6*60 + 13)*60 + 23;
-    cout << start_time << endl;
-    cout << endtime_time << endl;
+    int d=0, h=0, m = 0, s=0;
+    int df = 0, hf = 0, mf = 0, sf = 0;
+    char dia[4];
+    char pontos[3];
+    char dia1[4];
+    char pontos1[3];
+
+    cin.get(dia, 4);
+    cin >> d;
+    cin >> h;
+    cin.get(pontos, 3);
+    cin >> m;
+    cin.get(pontos,3);
+    cin >> s;
+    cin.getline(dia, 0);
+
+    cin.get(dia1,4);
+    cin >> df;
+    cin >> hf;
+    cin.get(pontos1,3);
+    cin >> mf;
+    cin.get(pontos1,3);
+    cin >> sf;
+
+    long dur = (df * 86400 + hf * 3600 + mf * 60 + sf) - (d * 86400 + h * 3600 + m * 60 + s);
+    cout << dur/86400 << " dia(s)" << endl;
+    cout << (dur%86400)/3600 << " hora(s)" << endl;
+    cout << ((dur%86400)%3600)/60 << " minuto(s)" << endl;
+    cout << ((dur%86400)%3600)%60 << " segundo(s)" << endl;
     return 0;
 }
